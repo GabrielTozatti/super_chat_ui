@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.scrollbar-off {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-off::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-fat {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3a3a3a transparent;
+}
+
+.scroll-fat::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-fat::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-fat::-webkit-scrollbar-thumb {
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
